@@ -1,0 +1,24 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Sign in to Skylight",
+        "description": "This unofficial integration only reads from your Skylight.\n\n1. Open a new browser tab, press F12, open the **Network** tab, tick **Preserve log** and type `welcome` in the filter box.\n2. In that tab, open [Skylight's sign-in page]({url}) and log in.\n3. Copy the address of the `welcome?code=...` request and paste it below.\n\nSkylight's welcome page removes the code from the address bar at once, which is why it has to be copied from the Network tab.",
+        "data": {
+          "redirect": "Welcome address (or just the code)",
+          "refresh_token": "Refresh token (advanced, instead of the above)"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Skylight rejected that code or token. Codes expire within minutes; start again with a fresh sign-in.",
+      "cannot_connect": "Could not reach Skylight, or Skylight retired the app version this integration sends. Check the log."
+    },
+    "abort": {
+      "already_configured": "This Skylight is already set up.",
+      "reauth_successful": "Signed in to Skylight again.",
+      "unique_id_mismatch": "That login belongs to a different Skylight.",
+      "no_frames": "This Skylight account has no calendars."
+    }
+  }
+}

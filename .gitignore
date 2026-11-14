@@ -1,0 +1,9 @@
+# Sign-in tokens written by tools/skylight_check.py. Never commit these.
+skylight_tokens.json
+pkce_state.json
+
+__pycache__/
+*.pyc
+.venv/
+.vscode/
+.idea/
